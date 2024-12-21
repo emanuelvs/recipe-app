@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", serif;
+}
+
+
+
+.screen {
+    display: none;
+    display: block;
+    background: #fefefe;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+nav {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background.png");
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #e2e2e2;
+    color: #333333;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: transform 0.2s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-3px);
+}
+
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.recipe-form input,
+.recipe-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.recipe-form button {
+    background-color: #ff6b6b;
+    color: white;
+    width: 320px;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-label {
+    color: #333333;
+}
+
+.recipe-form button:hover {
+    background-color: #ff5252;
+}
+
+.favorite {
+    color: gold;
+    cursor: pointer;
+}
+
+.section-title {
+    color: #333333;
+    margin-bottom: 14px;
+}
+
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    /* background-color: #1a1a2e; */
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 28%, rgba(252,176,69,1) 100%);
+    color: white;
+    margin-top: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
