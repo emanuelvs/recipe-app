@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Receita - Receitas Fáceis</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="#" class="active">Adicionar Receita</a>
+            <a href="favorites.html">Favoritos</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="add" class="screen">
+            <h3 class="section-title">Adicione sua receita</h3>
+            <form class="recipe-form" onsubmit="addRecipe(event)">
+                <div class="form-group">
+                    <label for="titulo" class="form-label">Nome da receita</label>
+                    <input type="text" id="titulo" name="titulo" 
+                        placeholder="Ex: Bolo de Chocolate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao" class="form-label">Descrição da receita</label>
+                    <textarea id="descricao" name="descricao" 
+                        placeholder="Uma breve descrição da sua receita"
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredientes" class="form-label">Ingredientes (um por linha)</label>
+                    <textarea id="ingredientes" name="ingredientes" 
+                        placeholder="Ex:&#10;2 xícaras de farinha&#10;1 xícara de açúcar&#10;3 ovos" 
+                        required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="modoPreparo" class="form-label">Modo de Preparo (um passo por linha)</label>
+                    <textarea id="modoPreparo" name="modoPreparo" 
+                        placeholder="Ex:&#10;1. Misture os ingredientes secos&#10;2. Adicione os ovos&#10;3. Asse por 40 minutos" 
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="urlImagem" class="form-label">URL da Imagem</label>
+                    <input type="url" id="urlImagem" name="urlImagem" 
+                        placeholder="https://exemplo.com/imagem.jpg" 
+                        required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tempoPreparo" class="form-label">Tempo de Preparo (minutos)</label>
+                        <input type="number" id="tempoPreparo" name="tempoPreparo" 
+                            placeholder="30" min="1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tempoCozimento" class="form-label">Tempo de Cozimento (minutos)</label>
+                        <input type="number" id="tempoCozimento" name="tempoCozimento" 
+                            placeholder="45" min="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="porcoes" class="form-label">Porções</label>
+                        <input type="number" id="porcoes" name="porcoes" 
+                            placeholder="4" min="1" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Adicionar Receita</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Receitas Emanuel Vieira. Todos os sabores são bem-vindos!</p>
+    </footer>
+
+    <script src="./add.js"></script>
+</body>
+</html>

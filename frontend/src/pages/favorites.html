@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receitas Fáceis</title>
+    <title>Receitas Favoritas - Receitas Fáceis</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -11,22 +11,21 @@
         <nav>
             <a href="../index.html">Início</a>
             <a href="add.html">Adicionar Receita</a>
-            <a href="#">Favoritos</a>
+            <a href="#" class="active">Favoritos</a>
         </nav>
     </header>
     
     <main>
-        <section id="favorites" class="screen">
-            <h3 class="section-title">Receitas Favoritas</h3>
-            <div id="favorites-list"></div>
-        </section>
+        <div class="screen">
+            <h2 class="section-title">Minhas Receitas Favoritas</h2>
+            <div id="favorites-list" class="recipes-grid"></div>
+        </div>
     </main>
+
     <footer>
         <p>&copy; 2024 Receitas Emanuel Vieira. Todos os sabores são bem-vindos!</p>
     </footer>
 
-    <script src="favorites.js"></script>
-    
+    <script src="./favorites.js"></script>
 </body>
 </html>
-

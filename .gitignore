@@ -1,0 +1,7 @@
+/backend/dist
+/backend/db
+/backend/node_modules
+
+/node_modules
+/dist
+/db
