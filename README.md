@@ -1,5 +1,5 @@
 # Receitas App
-
+Projeto para a disciplina de Sistemas Web 2024.2
 Aplicação web para gerenciamento de receitas culinárias, permitindo aos usuários adicionar, visualizar e favoritar receitas.
 
 ## 🚀 Funcionalidades
